@@ -1,4 +1,5 @@
-# Welcome to SkunkHTML!
+# RA0SMS Blog
 
-This is an ultra-simple blog generator built on Markdown files. Just fork this repository, enable GitHub Pages, and you have a blog — with RSS, dark mode, SEO meta tags, and themes built in. To add a new post, create a Markdown file with a date in its filename and push. That's it! Markdown in, GitHub Pages out!
+Welcome to my personal blog about radio, electronics, and amateur radio (ham radio). Here I share my projects, experiments, and notes on various topics related to RF engineering, circuit design, antenna building, and more.
 
+Feel free to explore the posts below and reach out if you have any questions or suggestions.

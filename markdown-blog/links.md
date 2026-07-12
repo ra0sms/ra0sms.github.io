@@ -1,10 +1,8 @@
 # Links
 
-Below are the most important links related to SkunkHTML:
+Useful resources for radio amateurs and electronics enthusiasts:
 
-* SkunkHTML repository on GitHub
-[https://github.com/mg0x7BE/skunk-html](https://github.com/mg0x7BE/skunk-html)
-* Discussions
-[https://github.com/mg0x7BE/skunk-html/discussions](https://github.com/mg0x7BE/skunk-html/discussions)
-* Issues
-[https://github.com/mg0x7BE/skunk-html/issues](https://github.com/mg0x7BE/skunk-html/issues)
+* My GitHub profile
+  [https://github.com/ra0sms](https://github.com/ra0sms)
+* QRZ.com — ham radio callsign database
+  [https://www.qrz.com](https://www.qrz.com)

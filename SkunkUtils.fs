@@ -30,7 +30,7 @@ module Config =
     // Only change the values in quotes - the rest is just labels.
     let siteTitle = "RA0SMS Blog"
     let siteDescription = "Blog about radio and electronics"
-    let siteBaseUrl = "https://ra0sms.githb.io"  // No trailing slash. Include repo name if using project pages.
+    let siteBaseUrl = "https://ra0sms.github.io"  // No trailing slash. Include repo name if using project pages.
     let siteLanguage = "en"
     let siteAuthor = "RA0SMS"  // Optional, used in RSS feed and meta tags
 
