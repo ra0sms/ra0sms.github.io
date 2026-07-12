@@ -63,17 +63,23 @@ nav {
     margin-bottom: 1rem;
 }
 
+.publications {
+    margin-top: 2rem;
+}
+
 .publications h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--color-bg-secondary);
+    border-bottom: 2px solid var(--color-bg-secondary);
 }
 
 .publications h3 {
-    margin-top: 1.8rem;
-    margin-bottom: 0.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
     color: var(--color-text-secondary);
     font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 .publications ul {
