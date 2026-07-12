@@ -131,7 +131,19 @@ module SkunkHtml
 
         let listOfAllBlogArticlesContentHtml =
             listOfAllBlogArticles
-            |> List.map (fun (date, title, link) -> $"""<li>{date}: <a href="{link}">{title}</a></li>""")
+            |> List.groupBy (fun (date, _, _) ->
+                if date.Length >= 4 then date.[..3] else "Unknown")
+            |> List.sortByDescending fst
+            |> List.map (fun (year, articles) ->
+                let items =
+                    articles
+                    |> List.map (fun (date, title, link) ->
+                        let displayDate =
+                            if date.Length >= 10 then date.[5..]
+                            else date
+                        $"""        <li>{displayDate}: <a href="{link}">{title}</a></li>""")
+                    |> String.concat "\n"
+                $"      <h3>{year}</h3>\n      <ul>\n{items}\n      </ul>")
             |> String.concat "\n"
 
         let content =
@@ -139,9 +151,7 @@ module SkunkHtml
         {frontPageContentHtml}
         <section class="publications">
             <h2>blog entries</h2>
-            <ul>
             {listOfAllBlogArticlesContentHtml}
-            </ul>
         </section>
         """
 

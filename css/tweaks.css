@@ -21,6 +21,8 @@ nav a img {
     border-color: var(--color-link);
     border-width: 1px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 blockquote,
@@ -59,6 +61,22 @@ a {
 
 nav {
     margin-bottom: 1rem;
+}
+
+.publications h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+}
+
+.publications ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.publications ul li {
+    padding: 0.15rem 0;
 }
 
 p img,
