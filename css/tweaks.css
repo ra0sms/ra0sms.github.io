@@ -63,8 +63,14 @@ nav {
     margin-bottom: 1rem;
 }
 
+.publications h2 {
+    border-bottom: 1px solid var(--color-bg-secondary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+}
+
 .publications h3 {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 0.75rem;
     color: var(--color-text-secondary);
     font-size: 1.2rem;
