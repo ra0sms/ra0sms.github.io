@@ -139,12 +139,15 @@ module SkunkHtml
                     articles
                     |> List.map (fun (date, title, link) ->
                         let displayDate =
-                            if date.Length >= 10 then date.[5..]
+                            if date.Length >= 10 then
+                                match DateTime.TryParse(date) with
+                                | true, dt -> dt.ToString("d MMM")
+                                | _ -> date.[5..]
                             else date
-                        $"""        <li>{displayDate}: <a href="{link}">{title}</a></li>""")
+                        $"""        <li><time datetime="{date}">{displayDate}</time> — <a href="{link}">{title}</a></li>""")
                     |> String.concat "\n"
                 $"      <h3>{year}</h3>\n      <ul>\n{items}\n      </ul>")
-            |> String.concat "\n"
+            |> String.concat "\n\n"
 
         let content =
             $"""
