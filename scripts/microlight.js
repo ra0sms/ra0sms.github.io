@@ -158,7 +158,7 @@
 
                     // saving the previous token type
                     // (skipping whitespaces and comments)
-                    lastTokenType =
+                    lastTokenType =~
                         (tokenType && tokenType < 7) ?
                             tokenType : lastTokenType;
 
