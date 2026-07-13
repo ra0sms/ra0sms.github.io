@@ -3,6 +3,8 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
   workflow_dispatch:
 
 jobs:
@@ -15,7 +17,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 10
+          dotnet-version: '10'
 
       - name: Generate static site
         run: dotnet run --project skunk-html.fsproj
